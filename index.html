@@ -1,395 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>My E-Commerce website</title>
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <!-- Fontawesome core CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <!--GOOGLE FONT -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <!--Slide Show Css -->
-    <link href="assets/ItemSlider/css/main-style.css" rel="stylesheet" />
-    <!-- custom CSS here -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link rel="stylesheet" href="css/tooplate-wave-cafe.css">
 </head>
 <body>
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><strong>Bipin</strong> Shop</a>
-            </div>
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="tm-site-header">
+            <i class="fas fa-coffee fa-3x tm-site-logo"></i>
+            <h1 class="tm-site-name">Bipin's Cafe</h1>
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#drink" class="tm-page-link active">
+                  <i class="fas fa-mug-hot tm-page-link-icon"></i>
+                  <span>Drink Menu</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#about" class="tm-page-link">
+                  <i class="fas fa-users tm-page-link-icon"></i>
+                  <span>About Us</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#special" class="tm-page-link">
+                  <i class="fas fa-glass-martini tm-page-link-icon"></i>
+                  <span>Special Items</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#contact" class="tm-page-link">
+                  <i class="fas fa-comments tm-page-link-icon"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="drink" class="tm-page-content">
+            <nav class="tm-black-bg tm-drinks-nav">
+              <ul>
+                <li>
+                  <a href="#" class="tm-tab-link active" data-id="cold">Iced Coffee</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="hot">Hot Coffee</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="juice">Fruit Juice</a>
+                </li>
+              </ul>
+            </nav>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div id="cold" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/iced-americano.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Americano<span class="tm-list-item-price">100.25 Rs</span></h3>
+                    <p class="tm-list-item-description">Here is a short description for the first item</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/iced-cappuccino.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Cappuccino<span class="tm-list-item-price">120.50 Rs</span></h3>
+                    <p class="tm-list-item-description">Here is a list of 4 items or add more.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/iced-espresso.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Espresso<span class="tm-list-item-price">140.25 Rs</span></h3>
+                    <p class="tm-list-item-description">Hello Good To meet you</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/iced-latte.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Latte<span class="tm-list-item-price">110.50 Rs</span></h3>
+                    <p class="tm-list-item-description">Contents are organized into 3 tabs <a href="https://www.tooplate.com/contact" rel="nofollow" target="_parent">contact Tooplate</a> if you have anything to ask.</p>
+                  </div>
+                </div> 
+                                       
+              </div>
+            </div> 
 
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Track Order</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Signup</a></li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">24x7 Support <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><strong>Call: </strong>bla bla</a></li>
-                            <li><a href="#"><strong>Mail: </strong>blabla@gmail.com</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#"><strong>Address: </strong>
-                                <div>
-                                    malak road<br />
-                                    lucknow,up
-                                </div>
-                            </a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" placeholder="Enter Keyword Here ..." class="form-control">
-                    </div>
-                    &nbsp; 
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </form>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="well well-lg offer-box text-center">
-
-
-                   Today's Offer : &nbsp; <span class="glyphicon glyphicon-cog"></span>&nbsp;40 % off  on purchase of  2,000 rupees and above till weekend !                
+            <div id="hot" class="tm-tab-content">
+              <div class="tm-list">
               
-               
+                <div class="tm-list-item">          
+                  <img src="img/hot-americano.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Hot Americano<span class="tm-list-item-price">80.50 Rs</span></h3>
+                    <p class="tm-list-item-description">Here is a short description for the item along with a squared thumbnail.</p>              
+                  </div>
                 </div>
-                <div class="main box-border">
-                    <div id="mi-slider" class="mi-slider">
-                        <nav>
-                            <a href="#">Shoes</a>
-                            <a href="#">Accessories</a>
-                            <a href="#">Watches</a>
-                            <a href="#">Bags</a>
-                        </nav>
-                    </div>
-                    
+                <div class="tm-list-item">          
+                  <img src="img/hot-cappuccino.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Hot Cappuccino<span class="tm-list-item-price">90.50 Rs</span></h3>
+                    <p class="tm-list-item-description">Here is a list of 4 items that can add more as you need.</p>                    
+                  </div>
                 </div>
-                <br />
+                <div class="tm-list-item">          
+                  <img src="img/hot-espresso.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Hot Espresso<span class="tm-list-item-price">70.50 Rs</span></h3>
+                    <p class="tm-list-item-description">Left side logo and main menu are fixed. The video background is fixed.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/hot-latte.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Hot Latte<span class="tm-list-item-price">60.50 Rs</span></h3>
+                    <p class="tm-list-item-description">Page contents are organized into 3 tabs to show different lists of items.</p>              
+                  </div>
+                </div>
+                         
+              </div>
             </div>
-            <!-- /.col -->
-            
-            <div class="col-md-3 text-center">
-                <div class=" col-md-12 col-sm-6 col-xs-6" >
-                    <div class="offer-text">
-                        25% off here
-                    </div>
-                    <div class="thumbnail product-box">
-                        <img src="assets/img/dummyimg.png" alt="" />
-                        <div class="caption">
-                            <h3><a href="#">Samsung Galaxy </a></h3>
-                            <p><a href="#">click me</a></p>
-                        </div>
-                    </div>
-             
-        </div>
-        <!-- /.row -->
-        <div class="row">
-            <div class="col-md-3">
-                <div>
-                    <a href="#" class="list-group-item active">Electronics
-                    </a>
-                    <ul class="list-group">
 
-                        <li class="list-group-item">Mobile
-      <span class="label label-primary pull-right">xyz</span>
-                        </li>
-                        <li class="list-group-item">Computers
-                      <span class="label label-success pull-right">xyz</span>
-                        </li>
-                        <li class="list-group-item">Tablets
-                         <span class="label label-danger pull-right">xyz</span>
-                        </li>
-                        <li class="list-group-item">Appliances
-                             <span class="label label-info pull-right">xyz</span>
-                        </li>
-                        <li class="list-group-item">Games & Entertainment
-                             <span class="label label-success pull-right">xyz</span>
-                        </li>
-                    </ul>
+            <div id="juice" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-1.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Strawberry Smoothie<span class="tm-list-item-price">120.50 Rs</span></h3>
+                    <p class="tm-list-item-description">Here is a short description for the item along with a squared thumbnail.</p>              
+                  </div>
                 </div>
-                <!-- /.div -->
-                <div>
-                    <a href="#" class="list-group-item active list-group-item-success">Clothing & Wears
-                    </a>
-                    <ul class="list-group">
-
-                        <li class="list-group-item">Men's Clothing
-                             <span class="label label-danger pull-right">300</span>
-                        </li>
-                        <li class="list-group-item">Women's Clothing
-                             <span class="label label-success pull-right">340</span>
-                        </li>
-                        <li class="list-group-item">Kid's Wear
-                             <span class="label label-info pull-right">735</span>
-                        </li>
-
-                    </ul>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-2.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Red Berry Smoothie<span class="tm-list-item-price">140.50 Rs</span></h3>
+                    <p class="tm-list-item-description">Here is a list of 4 items or add more.</p>                    
+                  </div>
                 </div>
-                <!-- /.div -->
-                <div>
-                    <a href="#" class="list-group-item active">Accessaries & Extras
-                    </a>
-                    <ul class="list-group">
-                        <li class="list-group-item">Mobile Accessaries
-                             <span class="label label-warning pull-right">456</span>
-                        </li>
-                        <li class="list-group-item">Men's Accessaries
-                             <span class="label label-success pull-right">156</span>
-                        </li>
-                        <li class="list-group-item">Women's Accessaries
-                             <span class="label label-info pull-right">400</span>
-                        </li>
-                        <li class="list-group-item">Kid's Accessaries
-                             <span class="label label-primary pull-right">89</span>
-                        </li>
-                        <li class="list-group-item">Home Products
-                             <span class="label label-danger pull-right">90</span>
-                        </li>
-                        <li class="list-group-item">Kitchen Products
-                             <span class="label label-warning pull-right">567</span>
-                        </li>
-                    </ul>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-3.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Pineapple Smoothie<span class="tm-list-item-price">160.50 Rs</span></h3>
+                    <p class="tm-list-item-description">Left side logo and main menu are fixed. The video background is fixed.</p>              
+                  </div>
                 </div>
-                <!-- /.div -->
-                <div>
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-success"><a href="#">New Offer's Coming </a></li>
-                        <li class="list-group-item list-group-item-info"><a href="#">New Products Added</a></li>
-                        <li class="list-group-item list-group-item-warning"><a href="#">Ending Soon Offers</a></li>
-                        <li class="list-group-item list-group-item-danger"><a href="#">Just Ended Offers</a></li>
-                    </ul>
-                </div>
-                <!-- /.div -->
-                <div class="well well-lg offer-box offer-colors">
-
-
-                    <span class="glyphicon glyphicon-star-empty"></span>25 % off  , GRAB IT                 
-              
-                   <br />
-                    <br />
-                    <div class="progress progress-striped">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 70%">
-                            <span class="sr-only">70% Complete (success)</span>
-                            2hr 35 mins left
-                        </div>
-                    </div>
-                    <a href="#">click here to know more </a>
-                </div>
-                <!-- /.div -->
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-4.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Spinach Smoothie<span class="tm-list-item-price">180.50 Rs</span></h3>
+                    <p class="tm-list-item-description">Yo whatsup!!</p>              
+                  </div>
+                </div>              
+              </div>
             </div>
-            <!-- /.col -->
-            <div class="col-md-9">
-                <div>
-                    <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li class="active">Electronics</li>
-                    </ol>
-                </div>
-                <!-- /.div -->
-                <div class="row">
-                    <div class="btn-group alg-right-pad">
-                        <button type="button" class="btn btn-default"><strong>1235  </strong>items</button>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                                Sort Products &nbsp;
-      <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">By Price Low</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Price High</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Popularity</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Reviews</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-               
-                </div>
-                <div>
-                    <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Clothing</a></li>
-                        <li class="active">Men's Clothing</li>
-                    </ol>
-                </div>
-                <!-- /.div -->
-                <div class="row">
-                    <div class="btn-group alg-right-pad">
-                        <button type="button" class="btn btn-default"><strong>3005  </strong>items</button>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                Sort Products &nbsp;
-      <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">By Price Low</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Price High</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Popularity</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Reviews</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <ul class="pagination alg-right-pad">
-                        <li><a href="#">&laquo;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
-                </div>
-                <!-- /.row -->
+            <!-- end Drink Menu Page -->
+          </div>
+
+          <!-- About Us Page -->
+          <div id="about" class="tm-page-content">
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <h2 class="tm-text-primary tm-about-header">About Bipin's Cafe</h2>
+              <div class="tm-list-item tm-list-item-2">                
+                <img src="img/about-1.png" alt="Image" class="tm-list-item-img tm-list-item-img-big">
+                <div class="tm-list-item-text-2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora maxime quo similique deserunt corrupti fuga nostrum.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore error illo, dolor adipisci perspiciatis laborum ducimus esse sapiente debitis facilis, rem nam vero eos, quos neque nobis praesentium deserunt! Repudiandae!
+                  Quaerat iste similique quisquam, aliquid ex accusamus libero aut debitis, repellendus officia consequuntur quia fugit tenetur ad!</p>
+                </div>                
+              </div>
             </div>
-            <!-- /.col -->
-        </div>
-        <!-- /.row -->
+            <div class="tm-black-bg tm-mb-20 tm-about-box-2">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">How we began</h2>
+                  <p>Hello this is my simple Cafeteria Thank you. Duis bibendum erat nec ipsum consectetur sodales.</p>                  
+                </div>                
+                <img src="img/about-2.png" alt="Image" class="tm-list-item-img tm-list-item-img-big tm-img-right">                
+              </div>
+              <p>Donec non urna elit. Quisque ut magna in dui mattis iaculis eu finibus metus. Suspendisse vel mi a lacus finibus vehicula vel ut diam. Nam pellentesque, mi quis ullamcorper.</p>
+            </div>
+          </div>
+          <!-- end About Us Page -->
+
+          <!-- Special Items Page -->
+          <div id="special" class="tm-page-content">
+            <div class="tm-special-items">
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-01.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Special One</h2>
+                  <p class="tm-special-item-text">Here is a short text description for the first special item</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-02.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Second Item</h2>
+                  <p class="tm-special-item-text">Have a good day!</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-03.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Third Special Item</h2>
+                  <p class="tm-special-item-text">Pellentesque in ultrices mi, quis mollis nulla. Quisque sed commodo est, quis tincidunt nunc.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-04.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Special Item Fourth</h2>
+                  <p class="tm-special-item-text">Vivamus finibus nulla sed metus sagittis, sed ultrices magna aliquam. Mauris fermentum.</p>  
+                </div>
+              </div>      
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-05.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Sixth Sense</h2>
+                  <p class="tm-special-item-text">Here is a short text description for sixth item. </p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-06.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Seventh Item</h2>
+                  <p class="tm-special-item-text">Curabitur eget erat sit amet sapien aliquet vulputate quis sed arcu.</p>  
+                </div>
+              </div>                      
+            </div>            
+          </div>
+          <!-- end Special Items Page -->
+
+          <!-- Contact Page -->
+          <div id="contact" class="tm-page-content">
+            <div class="tm-black-bg tm-contact-text-container">
+              <h2 class="tm-text-primary">Contact Bipin</h2>
+              <p>Welcome to Bipin's Cafeteria</p>
+            </div>
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+              <form action="" method="POST" id="contact-form">
+                <div class="tm-form-group">
+                  <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
+                </div>
+                <div class="tm-form-group">
+                  <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                  <textarea rows="6" name="message" class="tm-form-control" placeholder="Message" required=""></textarea>
+                </div>        
+                <div>
+                  <button type="submit" class="tm-btn-primary tm-align-right">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end Contact Page -->
+        </main>
+      </div>    
     </div>
-    <!-- /.container -->
-    <div class="col-md-12 download-app-box text-center">
+  </div>
+    
+  <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="video/wave-cafe-video-bg.mp4" type="video/mp4">
+      </video>
+  </div>
 
-        <span class="glyphicon glyphicon-download-alt"></span>Download Our Android App and Get 10% additional Off on all Products . <a href="#" class="btn btn-danger btn-lg">DOWNLOAD  NOW</a>
+  <script src="js/jquery-3.4.1.min.js"></script>    
+  <script>
 
-    </div>
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+      const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+      const tmVideo = $('#tm-video');
 
-    <!--Footer -->
-    <div class="col-md-12 footer-box">
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+    }
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+        
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+      
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault(); 
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
 
 
-        <div class="row small-box ">
-            <strong>Mobiles :</strong> <a href="#">samsung</a> |  <a href="#">Sony</a> | <a href="#">Micromax</a> | 
-            <a href="#">samsung</a> |  <a href="#">Sony</a> | <a href="#">Micromax</a> |<a href="#">samsung</a> |
-              <a href="#">Sony</a> | <a href="#">Micromax</a> |<a href="#">samsung</a> |  <a href="#">Sony</a> | 
-            <a href="#">Micromax</a> |<a href="#">samsung</a> |  <a href="#">Sony</a> | <a href="#">Micromax</a> |
-            <a href="#">samsung</a> |  <a href="#">Sony</a> | <a href="#">Micromax</a> |<a href="#">samsung</a> |  
-            <a href="#">Sony</a> | <a href="#">Micromax</a> | view all items
-         
-        </div>
-        <div class="row small-box ">
-            <strong>Laptops :</strong> <a href="#">samsung</a> |  <a href="#">Sony</a> | <a href="#">Micromax Laptops</a> | 
-            <a href="#">samsung</a> |  <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
-              <a href="#">Sony Laptops</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |  <a href="#">Sony</a> | 
-            <a href="#">Micromax</a> |<a href="#">samsung</a> |  <a href="#">Sony</a> | <a href="#">Micromax</a> |
-            <a href="#">samsung</a> |  <a href="#">Sony</a> | <a href="#">Micromax</a> |<a href="#">samsung</a> |  
-            <a href="#">Sony</a> | <a href="#">Micromax</a> | view all items
-        </div>
-        <div class="row small-box ">
-            <strong>Tablets : </strong><a href="#">samsung</a> |  <a href="#">Sony Tablets</a> | <a href="#">Micromax</a> | 
-            <a href="#">samsung </a>|  <a href="#">Sony</a> | <a href="#">Micromax</a> |<a href="#">samsung</a> |
-              <a href="#">Sony</a> | <a href="#">Micromax</a> |<a href="#">samsung Tablets</a> |  <a href="#">Sony</a> | 
-            <a href="#">Micromax</a> |<a href="#">samsung Tablets</a> |  <a href="#">Sony</a> | <a href="#">Micromax</a> |
-            <a href="#">samsung</a> |  <a href="#">Sony</a> | <a href="#">Micromax</a> |<a href="#">samsung</a> |  
-            <a href="#">Sony</a> | <a href="#">Micromax Tablets</a> | view all items
-            
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <strong>Send a Quick Query </strong>
-                <hr>
-                <form>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" required="required" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" required="required" placeholder="Email address">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12">
-                            <div class="form-group">
-                                <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Submit Request</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+      /************** Video background *********/
 
-            <div class="col-md-4">
-                <strong>Our Location</strong>
-                <hr>
-                <p>
-                     malak road<br />
-                                    lucknow<br />
-                    Call: bla bla<br>
-                    Email: blabla@gmail.com<br>
-                </p>
+      setVideoSize();
 
-                2022 | All Right Reserved
-            </div>
-            <div class="col-md-4 social-box">
-                <strong>We are Social </strong>
-                <hr>
-                <a href="#"><i class="fa fa-facebook-square fa-3x "></i></a>
-                <a href="#"><i class="fa fa-twitter-square fa-3x "></i></a>
-                <a href="#"><i class="fa fa-google-plus-square fa-3x c"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square fa-3x "></i></a>
-                <a href="#"><i class="fa fa-pinterest-square fa-3x "></i></a>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. 
-                </p>
-            </div>
-        </div>
-        <hr>
-    </div>
-    <!-- /.col -->
-    <div class="col-md-12 end-box ">
-        &copy; 2022 | &nbsp; All Rights Reserved | &nbsp; 24x7 support | &nbsp; Email us: blabla@gmail.com
-    </div>
-    <!-- /.col -->
-    <!--Footer end -->
-    <!--Core JavaScript file  -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!--bootstrap JavaScript file  -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!--Slider JavaScript file  -->
-    <script src="assets/ItemSlider/js/modernizr.custom.63321.js"></script>
-    <script src="assets/ItemSlider/js/jquery.catslider.js"></script>
-    <script>
-        $(function () {
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
 
-            $('#mi-slider').catslider();
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
 
-        });
-		</script>
+      btn.on("click", function(e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        }
+      });
+    });
+      
+  </script>
 </body>
 </html>
