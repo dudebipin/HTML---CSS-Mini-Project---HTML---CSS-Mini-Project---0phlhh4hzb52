@@ -1,1 +1,1 @@
-this is a simple ecommerce website which created
+cool coffee shop
